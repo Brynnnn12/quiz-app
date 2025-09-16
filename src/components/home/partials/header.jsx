@@ -1,17 +1,22 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import {
+  FaHome,
+  FaInfoCircle,
+  FaQuestionCircle,
+  FaBars,
+  FaTimes,
+} from "react-icons/fa";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="bg-transparent fixed top-0 left-0 right-0 z-50">
-      {" "}
-      {/* Ubah absolute menjadi fixed */}
-      <div className="container bg-blue-500 rounded-xl mx-auto px-4 py-4 mt-6">
+    <header className="bg-transparent px-4 sm:px-0 fixed top-0 left-0 right-0 z-50">
+      <div className="container bg-blue-500 rounded-xl mx-auto  px-4 py-3 sm:py-4 mt-4 sm:mt-6">
         <nav className="flex justify-between items-center">
           <div>
-            <p className="text-white font-bold text-xl drop-shadow-lg">
+            <p className="text-white font-bold text-lg sm:text-xl drop-shadow-lg">
               Quiz Nabi
             </p>
           </div>
@@ -20,73 +25,65 @@ export default function Header() {
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-white focus:outline-none drop-shadow-lg"
+              className="text-white focus:outline-none drop-shadow-lg p-2"
             >
-              <svg
-                className="w-7 h-7"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d={
-                    isMenuOpen
-                      ? "M6 18L18 6M6 6l12 12"
-                      : "M4 6h16M4 12h16M4 18h16"
-                  }
-                />
-              </svg>
+              {isMenuOpen ? <FaTimes size={20} /> : <FaBars size={20} />}
             </button>
           </div>
 
           {/* Desktop navigation */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex space-x-6 lg:space-x-8">
             <Link
               to="/"
-              className="text-white hover:text-blue-200 font-medium transition-colors drop-shadow-lg"
+              className="flex items-center space-x-2 text-white hover:text-blue-200 font-medium transition-colors drop-shadow-lg"
             >
-              Home
+              <FaHome size={16} />
+              <span>Home</span>
             </Link>
             <Link
               to="/about"
-              className="text-white hover:text-blue-200 font-medium transition-colors drop-shadow-lg"
+              className="flex items-center space-x-2 text-white hover:text-blue-200 font-medium transition-colors drop-shadow-lg"
             >
-              About
+              <FaInfoCircle size={16} />
+              <span>About</span>
             </Link>
             <Link
               to="/quiz/instructions"
-              className="text-white hover:text-blue-200 font-medium transition-colors drop-shadow-lg"
+              className="flex items-center space-x-2 text-white hover:text-blue-200 font-medium transition-colors drop-shadow-lg"
             >
-              Quiz
+              <FaQuestionCircle size={16} />
+              <span>Quiz</span>
             </Link>
           </div>
         </nav>
 
         {/* Mobile menu */}
         {isMenuOpen && (
-          <div className="md:hidden mt-4 bg-black/70 backdrop-blur-sm p-4 rounded-lg shadow">
-            <div className="flex flex-col space-y-3">
+          <div className="md:hidden mt-4 bg-black/80 backdrop-blur-md p-4 rounded-lg shadow-lg">
+            <div className="flex flex-col space-y-4">
               <Link
                 to="/"
-                className="text-white hover:text-blue-200 transition-colors"
+                className="flex items-center space-x-3 text-white hover:text-blue-200 transition-colors py-2"
+                onClick={() => setIsMenuOpen(false)}
               >
-                Home
+                <FaHome size={18} />
+                <span>Home</span>
               </Link>
               <Link
                 to="/about"
-                className="text-white hover:text-blue-200 transition-colors"
+                className="flex items-center space-x-3 text-white hover:text-blue-200 transition-colors py-2"
+                onClick={() => setIsMenuOpen(false)}
               >
-                About
+                <FaInfoCircle size={18} />
+                <span>About</span>
               </Link>
               <Link
                 to="/quiz/instructions"
-                className="text-white hover:text-blue-200 transition-colors"
+                className="flex items-center space-x-3 text-white hover:text-blue-200 transition-colors py-2"
+                onClick={() => setIsMenuOpen(false)}
               >
-                Quiz
+                <FaQuestionCircle size={18} />
+                <span>Quiz</span>
               </Link>
             </div>
           </div>

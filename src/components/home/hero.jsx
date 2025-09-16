@@ -33,17 +33,13 @@ export default function Hero() {
   };
 
   const buttonVariants = {
-    hidden: { y: 40, opacity: 0, scale: 0.9 },
+    hidden: { opacity: 0 },
     visible: {
-      y: 0,
       opacity: 1,
-      scale: 1,
       transition: {
-        type: "spring",
-        stiffness: 100,
-        damping: 15,
-        delay: 1.0,
-        duration: 1.0,
+        duration: 0.4,
+        delay: 0.8,
+        ease: "easeOut",
       },
     },
   };
@@ -80,13 +76,10 @@ export default function Hero() {
         </motion.p>
         <motion.button
           variants={buttonVariants}
-          whileHover={{
-            scale: 1.05,
-            boxShadow: "0 20px 40px rgba(0,0,0,0.3)",
-          }}
-          whileTap={{ scale: 0.95 }}
+          whileHover={{ scale: 1.02 }}
+          whileTap={{ scale: 0.98 }}
           onClick={() => navigate("/quiz/instructions")}
-          className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-12 py-6 mt-6 rounded-2xl shadow-2xl transition-all duration-300 transform hover:scale-105 font-bold text-xl border-2 border-white/20"
+          className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-10 py-6 mt-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-200 font-bold text-xl border-2 border-white/20"
         >
           🚀 Mulai Petualangan
         </motion.button>

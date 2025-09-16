@@ -1,7 +1,13 @@
 import { motion } from "framer-motion";
-import { FaRedo, FaTrophy, FaTimesCircle, FaStar } from "react-icons/fa";
+import {
+  FaRedo,
+  FaTrophy,
+  FaTimesCircle,
+  FaStar,
+  FaHome,
+} from "react-icons/fa";
 
-const ScoreCard = ({ score, quizData, restartQuiz }) => {
+const ScoreCard = ({ score, quizData, restartQuiz, goToHome }) => {
   return (
     <motion.div
       key="score"
@@ -77,17 +83,30 @@ const ScoreCard = ({ score, quizData, restartQuiz }) => {
         ))}
       </motion.div>
 
-      <motion.button
-        initial={{ y: 20, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ delay: 0.9 }}
-        onClick={restartQuiz}
-        whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.95 }}
-        className="mt-8 flex items-center justify-center px-6 py-3 bg-indigo-600 text-white font-medium rounded-lg hover:bg-indigo-700 transition duration-200 mx-auto"
-      >
-        <FaRedo className="mr-2" /> Main Lagi
-      </motion.button>
+      <div className="flex flex-col sm:flex-row justify-center gap-4 mt-8">
+        <motion.button
+          initial={{ y: 20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.9 }}
+          onClick={restartQuiz}
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          className="flex items-center justify-center px-6 py-3 bg-indigo-600 text-white font-medium rounded-lg hover:bg-indigo-700 transition duration-200"
+        >
+          <FaRedo className="mr-2" /> Main Lagi
+        </motion.button>
+        <motion.button
+          initial={{ y: 20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 1.0 }}
+          onClick={goToHome}
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          className="flex items-center justify-center px-6 py-3 bg-gray-600 text-white font-medium rounded-lg hover:bg-gray-700 transition duration-200"
+        >
+          <FaHome className="mr-2" /> Kembali ke Home
+        </motion.button>
+      </div>
     </motion.div>
   );
 };

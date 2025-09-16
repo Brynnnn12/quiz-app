@@ -121,6 +121,7 @@ const ErrorPage = () => {
             <motion.path
               d="M20,50 Q40,30 60,50 Q40,70 20,50"
               fill="#4FD1C5"
+              fillOpacity="0.7"
               stroke="#2C7A7B"
               strokeWidth="2"
             />
@@ -128,6 +129,7 @@ const ErrorPage = () => {
             <motion.path
               d="M60,50 Q80,40 90,50 Q80,60 60,50"
               fill="#4FD1C5"
+              fillOpacity="0.7"
               stroke="#2C7A7B"
               strokeWidth="2"
             />
@@ -254,7 +256,7 @@ const ErrorPage = () => {
           variants={containerVariants}
           initial="hidden"
           animate="visible"
-          className="bg-blue-800 bg-opacity-50 backdrop-blur-md rounded-2xl p-8 shadow-2xl border border-blue-600 border-opacity-50 mt-32"
+          className="bg-blue-800 bg-opacity-20 backdrop-blur-sm rounded-2xl p-8 shadow-xl border border-blue-400 border-opacity-20 mt-32"
         >
           <motion.h1
             variants={itemVariants}
@@ -327,6 +329,7 @@ const ErrorPage = () => {
               <path
                 d="M10,30 Q25,20 40,30 Q25,40 10,30"
                 fill="#63B3ED"
+                fillOpacity="0.6"
                 stroke="#2C5282"
                 strokeWidth="1.5"
               />
@@ -341,12 +344,12 @@ const ErrorPage = () => {
             <path
               d="M0,120 Q200,80 400,100 Q600,60 800,90 Q1000,40 1200,80 L1200,120 L0,120 Z"
               fill="#2D3748"
-              fillOpacity="0.7"
+              fillOpacity="0.4"
             />
             <path
               d="M0,120 Q100,100 300,110 Q500,70 700,100 Q900,50 1200,90 L1200,120 L0,120 Z"
               fill="#4A5568"
-              fillOpacity="0.5"
+              fillOpacity="0.3"
             />
           </svg>
         </div>
