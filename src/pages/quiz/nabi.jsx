@@ -25,7 +25,7 @@ export default function Quiz() {
   const [showScore, setShowScore] = useState(false);
   const [selectedOption, setSelectedOption] = useState(null);
   const [isCorrect, setIsCorrect] = useState(null);
-  const [timeLeft, setTimeLeft] = useState(100);
+  const [timeLeft, setTimeLeft] = useState(600);
   const [isTimeUp, setIsTimeUp] = useState(false);
   const [showExitModal, setShowExitModal] = useState(false);
   const [shuffledQuestions, setShuffledQuestions] = useState([]);
@@ -94,7 +94,7 @@ export default function Quiz() {
     setShowScore(false);
     setSelectedOption(null);
     setIsCorrect(null);
-    setTimeLeft(100); // 5 minutes
+    setTimeLeft(600); // 10 minutes
     setIsTimeUp(false);
   };
 
