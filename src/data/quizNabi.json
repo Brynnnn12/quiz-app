@@ -1,0 +1,102 @@
+[
+  {
+    "questionText": "Siapakah nabi pertama yang diutus Allah SWT?",
+    "answerOptions": ["Nuh", "Adam", "Ibrahim", "Musa"],
+    "correctAnswer": "Adam"
+  },
+  {
+    "questionText": "Nabi mana yang dikenal sebagai orang yang sabar karena ujian dari Allah?",
+    "answerOptions": ["Ayub", "Yusuf", "Dawud", "Sulaiman"],
+    "correctAnswer": "Ayub"
+  },
+  {
+    "questionText": "Siapakah nabi yang membangun Ka'bah bersama Ismail?",
+    "answerOptions": ["Ibrahim", "Ismail", "Ishaq", "Yaqub"],
+    "correctAnswer": "Ibrahim"
+  },
+  {
+    "questionText": "Nabi mana yang diutus kepada kaum Tsamud?",
+    "answerOptions": ["Hud", "Saleh", "Syuaib", "Luth"],
+    "correctAnswer": "Saleh"
+  },
+  {
+    "questionText": "Siapakah nabi yang membelah laut Merah?",
+    "answerOptions": ["Harun", "Musa", "Yusuf", "Yunus"],
+    "correctAnswer": "Musa"
+  },
+  {
+    "questionText": "Nabi mana yang dikenal sebagai pembangun Baitul Maqdis?",
+    "answerOptions": ["Dawud", "Sulaiman", "Zakaria", "Yahya"],
+    "correctAnswer": "Sulaiman"
+  },
+  {
+    "questionText": "Siapakah nabi yang ditelan oleh ikan besar?",
+    "answerOptions": ["Yunus", "Ilyas", "Ilyasa", "Dzulkifli"],
+    "correctAnswer": "Yunus"
+  },
+  {
+    "questionText": "Nabi mana yang diutus kepada kaum Ad?",
+    "answerOptions": ["Nuh", "Hud", "Saleh", "Syuaib"],
+    "correctAnswer": "Hud"
+  },
+  {
+    "questionText": "Siapakah nabi yang memiliki mimpi tentang 11 bintang dan matahari?",
+    "answerOptions": ["Yusuf", "Yaqub", "Ishaq", "Ismail"],
+    "correctAnswer": "Yusuf"
+  },
+  {
+    "questionText": "Nabi mana yang dikenal sebagai orang yang jujur?",
+    "answerOptions": ["Idris", "Nuh", "Ibrahim", "Musa"],
+    "correctAnswer": "Idris"
+  },
+  {
+    "questionText": "Siapakah nabi yang membangun kapal untuk menyelamatkan kaumnya dari banjir?",
+    "answerOptions": ["Nuh", "Hud", "Saleh", "Luth"],
+    "correctAnswer": "Nuh"
+  },
+  {
+    "questionText": "Nabi mana yang diutus kepada kaum Madyan?",
+    "answerOptions": ["Syuaib", "Luth", "Ilyas", "Ilyasa"],
+    "correctAnswer": "Syuaib"
+  },
+  {
+    "questionText": "Siapakah nabi yang diutus kepada kaum Sodom?",
+    "answerOptions": ["Luth", "Ibrahim", "Ismail", "Ishaq"],
+    "correctAnswer": "Luth"
+  },
+  {
+    "questionText": "Nabi mana yang diberi Taurat oleh Allah?",
+    "answerOptions": ["Musa", "Harun", "Dawud", "Sulaiman"],
+    "correctAnswer": "Musa"
+  },
+  {
+    "questionText": "Siapakah nabi yang dikenal sebagai raja dan hakim?",
+    "answerOptions": ["Dawud", "Sulaiman", "Zakaria", "Yahya"],
+    "correctAnswer": "Dawud"
+  },
+  {
+    "questionText": "Nabi mana yang ibunya adalah Hannah?",
+    "answerOptions": ["Yahya", "Zakaria", "Isa", "Muhammad"],
+    "correctAnswer": "Yahya"
+  },
+  {
+    "questionText": "Siapakah nabi yang lahir dari Maryam tanpa ayah?",
+    "answerOptions": ["Isa", "Zakaria", "Yahya", "Muhammad"],
+    "correctAnswer": "Isa"
+  },
+  {
+    "questionText": "Nabi mana yang dikenal sebagai penutup para nabi?",
+    "answerOptions": ["Muhammad", "Isa", "Musa", "Ibrahim"],
+    "correctAnswer": "Muhammad"
+  },
+  {
+    "questionText": "Siapakah nabi yang diberi Zabur oleh Allah?",
+    "answerOptions": ["Dawud", "Sulaiman", "Musa", "Ibrahim"],
+    "correctAnswer": "Dawud"
+  },
+  {
+    "questionText": "Nabi mana yang diutus kepada kaum Aad?",
+    "answerOptions": ["Hud", "Saleh", "Syuaib", "Nuh"],
+    "correctAnswer": "Hud"
+  }
+]
